@@ -364,6 +364,8 @@ class MainFrame(wx.Frame):
         self.Destroy()
         if self.about_window:
             self.about_window.Close()
+        if self.update_window:
+            self.update_window.Close()
 
     def on_about(self, e):
         if self.about_window:
