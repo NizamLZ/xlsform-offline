@@ -394,9 +394,11 @@ class MainFrame(wx.Frame):
     def check_update_and_show(self, event):
         if self.update_window:
             self.update_window.Close()
-        self.update_window = UpdateAvailableFrame(None, event.data)
-        self.update_window.Centre()
-        self.update_window.Show()
+
+        if event.data['update_available']:
+            self.update_window = UpdateAvailableFrame(None, event.data)
+            self.update_window.Centre()
+            self.update_window.Show()
 
     @staticmethod
     def is_java_installed():
