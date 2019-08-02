@@ -18,7 +18,7 @@ import threading
 
 # TODO pull out all strings
 # TODO why is the first button selected
-VERSION = 'v1.9.0'
+VERSION = 'v1.11.0'
 TITLE = 'ODK XLSForm Offline ' + VERSION
 
 APP_QUIT = 1
